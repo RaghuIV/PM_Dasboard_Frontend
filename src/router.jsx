@@ -6,6 +6,7 @@ import Drivers from "./pages/Drivers";
 import RoutesPage from "./pages/Routes";
 import Orders from "./pages/Orders";
 import Login from "./pages/Login";
+import Register from "./pages/Register"
 
 export default function App() {
   return (
@@ -13,7 +14,7 @@ export default function App() {
       <Routes>
         {/* Public routes */}
         <Route path="/" element={<Login />} />
-
+        <Route path="/register" element={<Register />}/>
         {/* Protected routes with common navbar */}
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard />} />
